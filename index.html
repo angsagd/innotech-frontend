@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Bali Innovation Technology 2026 | ITB STIKOM Bali</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="css/shared.css" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00129e",
+                        "deep-tech": "#000558",
+                        "accent-blue": "#102FB5",
+                        "accent-soft": "#A2B5E8",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#0f1123",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "sans": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-[#101118] dark:text-white transition-colors duration-300">
+    <!-- Header / Nav -->
+    <header
+        class="sticky-nav fixed top-0 w-full z-50 border-b border-[#f0f0f5] dark:border-white/10 px-6 lg:px-40 py-4">
+        <div class="max-w-[1280px] mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="p-1.5 bg-primary rounded-lg text-white">
+                    <span class="material-symbols-outlined text-2xl">rocket_launch</span>
+                </div>
+                <h2 class="text-[#101118] dark:text-white text-lg font-extrabold tracking-tight">Bali InnoTech <span
+                        class="text-primary">2026</span></h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#event">Event</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#expo">Expo</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors"
+                    href="index.html#workshop">Workshop</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#faq">FAQ</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <img alt="ITB STIKOM Bali" class="h-8 w-auto" src="images/LogoITBSTIKOMBali.png" />
+                <button aria-controls="mobile-menu" aria-expanded="false"
+                    class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-[#dadce7] dark:border-white/20 hover:bg-background-light dark:hover:bg-white/10 transition-all"
+                    id="mobile-menu-toggle" type="button">
+                    <span class="material-symbols-outlined text-xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="px-6 lg:px-40 py-12 lg:py-20">
+            <div class="max-w-[1280px] mx-auto">
+            <div class="hero-stage relative overflow-hidden rounded-3xl bg-deep-tech min-h-[560px] flex flex-col items-center justify-center p-8 text-center"
+                data-alt="Futuristic tech conference stage with glowing blue lights">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-8">
+                        <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                        <span class="text-white text-xs font-bold tracking-widest uppercase">Bali Innovation
+                            Technology</span>
+                    </div>
+                    <h1 class="text-white text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight max-w-4xl mb-6">
+                        Transforming Ideas <br />Into <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-white">Impact</span>
+                    </h1>
+                    <p class="text-blue-100 text-lg lg:text-xl max-w-2xl mb-10 leading-relaxed">
+                        Acara teknologi terbesar untuk networking dan inovasi. Bergabunglah dengan 5.000+ pemimpin
+                        teknologi di jantung Bali.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-primary text-white font-bold px-8 py-4 rounded-xl text-lg hover:scale-105 transition-transform shadow-xl shadow-primary/20">
+                            Secure Your Spot
+                        </button>
+                        <button
+                            class="bg-white/10 backdrop-blur-md text-white border border-white/20 font-bold px-8 py-4 rounded-xl text-lg hover:bg-white/20 transition-all">
+                            View Schedule
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stats Section -->
+        <section class="px-6 lg:px-40 py-10">
+            <div class="max-w-[1280px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="glass-card p-8 rounded-2xl flex flex-col gap-2">
+                    <span class="material-symbols-outlined text-primary text-3xl">corporate_fare</span>
+                    <p class="text-sm font-semibold opacity-60">Tech Companies</p>
+                    <h3 class="text-3xl font-black">50+</h3>
+                </div>
+                <div class="glass-card p-8 rounded-2xl flex flex-col gap-2">
+                    <span class="material-symbols-outlined text-primary text-3xl">work</span>
+                    <p class="text-sm font-semibold opacity-60">Job Vacancies</p>
+                    <h3 class="text-3xl font-black">200+</h3>
+                </div>
+                <div class="glass-card p-8 rounded-2xl flex flex-col gap-2">
+                    <span class="material-symbols-outlined text-primary text-3xl">groups</span>
+                    <p class="text-sm font-semibold opacity-60">Projected Attendees</p>
+                    <h3 class="text-3xl font-black">5000+</h3>
+                </div>
+                <div class="glass-card p-8 rounded-2xl flex flex-col gap-2">
+                    <span class="material-symbols-outlined text-primary text-3xl">emoji_events</span>
+                    <p class="text-sm font-semibold opacity-60">Innovation Awards</p>
+                    <h3 class="text-3xl font-black">12</h3>
+                </div>
+            </div>
+        </section>
+        <!-- Event Insight -->
+        <section class="px-6 lg:px-40 py-20" id="event">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-16">
+                    <div class="max-w-2xl">
+                        <span class="text-primary font-extrabold uppercase tracking-widest text-sm mb-4 block">Event
+                            Insight</span>
+                        <h2 class="text-4xl lg:text-5xl font-black leading-tight tracking-tight">Experience the future
+                            through four key pillars</h2>
+                    </div>
+                    <p class="text-lg opacity-70 lg:max-w-md">
+                        Kami merancang setiap momen untuk meningkatkan karier Anda dan memperluas perspektif tentang apa
+                        yang mungkin.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="glass-card p-8 rounded-2xl group hover:bg-primary transition-all duration-300">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-white/20">
+                            <span class="material-symbols-outlined text-primary group-hover:text-white">groups_3</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-white">Networking</h3>
+                        <p class="opacity-70 group-hover:text-white/80">Terhubung dengan pemimpin industri dan
+                            antusias teknologi yang sejalan dari seluruh dunia.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl group hover:bg-primary transition-all duration-300">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-white/20">
+                            <span class="material-symbols-outlined text-primary group-hover:text-white">lightbulb</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-white">Innovation</h3>
+                        <p class="opacity-70 group-hover:text-white/80">Temukan teknologi terobosan dan solusi kreatif
+                            yang membentuk 2026.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl group hover:bg-primary transition-all duration-300">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-white/20">
+                            <span class="material-symbols-outlined text-primary group-hover:text-white">bolt</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-white">Skill Upgrade</h3>
+                        <p class="opacity-70 group-hover:text-white/80">Belajar dari para ahli kelas dunia melalui
+                            workshop praktik dan pendalaman intensif.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-2xl group hover:bg-primary transition-all duration-300">
+                        <div
+                            class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-white/20">
+                            <span
+                                class="material-symbols-outlined text-primary group-hover:text-white">theater_comedy</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-white">Entertainment</h3>
+                        <p class="opacity-70 group-hover:text-white/80">Nikmati pertunjukan bertema teknologi, galeri
+                            seni digital, dan instalasi interaktif.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Expo Section -->
+        <section class="bg-deep-tech py-24 px-6 lg:px-40 text-white overflow-hidden relative" id="expo">
+            <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+                <svg height="100%" viewbox="0 0 400 400" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="200" cy="200" fill="none" r="150" stroke="white" stroke-width="1"></circle>
+                    <circle cx="200" cy="200" fill="none" r="100" stroke="white" stroke-width="1"></circle>
+                    <line stroke="white" stroke-width="0.5" x1="0" x2="400" y1="200" y2="200"></line>
+                    <line stroke="white" stroke-width="0.5" x1="200" x2="200" y1="0" y2="400"></line>
+                </svg>
+            </div>
+            <div class="max-w-[1280px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl lg:text-5xl font-black mb-8 leading-tight">Expo &amp; Career Hub</h2>
+                    <p class="text-blue-100 text-lg mb-10 leading-relaxed">
+                        Lebih dari sekadar event. Bali InnoTech 2026 menghadirkan expo teknologi dan bursa karier
+                        terbesar di kawasan ini. Dapatkan kesempatan direkrut oleh unicorn terkemuka atau temukan
+                        platform SaaS besar berikutnya.
+                    </p>
+                    <ul class="space-y-6 mb-10">
+                        <li class="flex items-start gap-4">
+                            <span
+                                class="material-symbols-outlined text-primary bg-white rounded-full p-1 text-base">check</span>
+                            <div>
+                                <h4 class="font-bold text-xl">Direct Interviews</h4>
+                                <p class="text-blue-200">Lewati proses penyaringan. Bicaralah langsung dengan hiring
+                                    manager dari GoTo, Traveloka, dan lainnya.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <span
+                                class="material-symbols-outlined text-primary bg-white rounded-full p-1 text-base">check</span>
+                            <div>
+                                <h4 class="font-bold text-xl">Demo Stations</h4>
+                                <p class="text-blue-200">Pengalaman langsung dengan prototipe AI, Web3, dan Robotika.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button
+                        class="bg-white text-deep-tech font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all">Download
+                        Expo Map</button>
+                </div>
+                <div class="relative">
+                    <div class="glass-card bg-white/10 border-white/20 p-6 rounded-3xl rotate-2">
+                        <img alt="Exhibition Hall" class="rounded-xl w-full h-[400px] object-cover"
+                            data-alt="Modern tech exhibition hall with booth setups"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQbTXk50gxJ18FzPRdIo_sURrgJ6N5BJ7lUYYiti6DZDWW4rP5xCbXIK8_AfVmrSP0KwDXpqTl996nM4ghbSMw8ghASN7TfuDBCc1kOyuYH6Amni9xRScQS7lYKTNgZy4CngFew87nNufonGTLNZCd2ASdSTEtPqc8uAWaZTRHbu5ldeJaFfhiYjntAg3ebs8DQvz5vPw21wgeBk64BTm53750z-IY6Mp66l2rHsQbfMJTIXoBeYMCDdNXI6sJ3cVdk8k36ZccBQc" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA / Workshop -->
+        <section class="px-6 lg:px-40 py-24" id="workshop">
+            <div
+                class="max-w-[1280px] mx-auto bg-gradient-to-br from-primary to-accent-blue rounded-[2.5rem] p-8 lg:p-20 text-white relative overflow-hidden">
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <h2 class="text-4xl lg:text-6xl font-black mb-6">Road to Bali InnoTech 2026</h2>
+                    <p class="text-xl text-blue-100 max-w-2xl mb-10">
+                        Jangan tunggu acara utama. Mulai perjalanan Anda dengan workshop pra-event eksklusif yang
+                        berfokus pada Full Stack Development, Etika AI, dan UI/UX Mastery.
+                    </p>
+                    <a href="roadto.html"
+                        class="bg-white text-primary font-black px-10 py-5 rounded-2xl text-lg hover:scale-105 transition-transform flex items-center gap-3 shadow-2xl">
+                        <span class="material-symbols-outlined">event_available</span>
+                        Join Pre-Event Workshop
+                </a>
+                </div>
+                <!-- Decorative element -->
+                <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+                <div class="absolute -top-20 -right-20 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+            </div>
+        </section>
+        <!-- FAQ Section -->
+        <section class="px-6 lg:px-40 py-20 bg-background-light dark:bg-background-dark/50" id="faq">
+            <div class="max-w-[800px] mx-auto">
+                <h2 class="text-4xl font-black text-center mb-16">Pertanyaan yang Sering Diajukan</h2>
+                <div class="space-y-4">
+                    <details
+                        class="glass-card rounded-2xl p-6 cursor-pointer group open:bg-white dark:open:bg-background-dark"
+                        open="">
+                        <summary class="flex justify-between items-center font-bold text-lg list-none">
+                            <span>Siapa saja yang bisa menghadiri Bali InnoTech 2026?</span>
+                            <span
+                                class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <p class="mt-4 opacity-70 leading-relaxed">
+                            Bali InnoTech terbuka untuk siswa, profesional, entrepreneur, dan siapa pun yang tertarik
+                            pada masa depan teknologi. Kami menyediakan jalur khusus untuk pemula maupun praktisi
+                            berpengalaman.
+                        </p>
+                    </details>
+                    <details class="glass-card rounded-2xl p-6 cursor-pointer group">
+                        <summary class="flex justify-between items-center font-bold text-lg list-none">
+                            <span>Apakah tiket bisa dikembalikan?</span>
+                            <span
+                                class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <p class="mt-4 opacity-70 leading-relaxed">
+                            Tiket tidak dapat dikembalikan, namun dapat dipindahtangankan hingga 7 hari sebelum acara
+                            dimulai.
+                        </p>
+                    </details>
+                    <details class="glass-card rounded-2xl p-6 cursor-pointer group">
+                        <summary class="flex justify-between items-center font-bold text-lg list-none">
+                            <span>Apa saja prasyarat workshop?</span>
+                            <span
+                                class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <p class="mt-4 opacity-70 leading-relaxed">
+                            Prasyarat berbeda di tiap sesi. Sebagian besar workshop membutuhkan laptop dan pemahaman
+                            dasar materi. Persyaratan detail akan dikirim melalui email kepada peserta terdaftar.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <!-- Logo Marquee -->
+        <section class="py-20 border-t border-b border-[#dadce7] dark:border-white/10">
+            <div class="px-6 lg:px-40">
+                <p class="text-center text-sm font-bold opacity-40 uppercase tracking-widest mb-10">Collaborating
+                    Partners</p>
+                <div
+                    class="flex flex-wrap justify-center gap-12 lg:gap-24 opacity-50 grayscale hover:grayscale-0 transition-all">
+                    <div class="text-2xl font-black text-[#101118] dark:text-white flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">cloud</span> CloudLink
+                    </div>
+                    <div class="text-2xl font-black text-[#101118] dark:text-white flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">security</span> SecuBase
+                    </div>
+                    <div class="text-2xl font-black text-[#101118] dark:text-white flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">database</span> DataFlow
+                    </div>
+                    <div class="text-2xl font-black text-[#101118] dark:text-white flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">hub</span> TechNet
+                    </div>
+                    <div class="text-2xl font-black text-[#101118] dark:text-white flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">stream</span> FlowAI
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-background-dark border-t border-[#f0f0f5] dark:border-white/10 px-6 lg:px-40 py-20">
+        <div class="max-w-[1280px] mx-auto grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-2">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="p-1.5 bg-primary rounded-lg text-white">
+                        <span class="material-symbols-outlined text-2xl">rocket_launch</span>
+                    </div>
+                    <h2 class="text-[#101118] dark:text-white text-xl font-extrabold tracking-tight">Bali InnoTech 2026
+                    </h2>
+                </div>
+                <p class="text-lg opacity-60 max-w-md mb-8">
+                    Organized by ITB STIKOM Bali. Pushing the boundaries of education and innovation in the heart of
+                    Indonesia.
+                </p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full border border-[#dadce7] dark:border-white/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                        href="#"><span class="material-symbols-outlined text-base">language</span></a>
+                    <a class="w-10 h-10 rounded-full border border-[#dadce7] dark:border-white/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                        href="#"><span class="material-symbols-outlined text-base">alternate_email</span></a>
+                    <a class="w-10 h-10 rounded-full border border-[#dadce7] dark:border-white/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                        href="#"><span class="material-symbols-outlined text-base">phone</span></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-4 opacity-60">
+                    <li><a class="hover:text-primary transition-colors" href="#">Event Schedule</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Speaker List</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Exhibitor Info</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Venue Map</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Support</h4>
+                <ul class="space-y-4 opacity-60">
+                    <li><a class="hover:text-primary transition-colors" href="#">Ticketing FAQ</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Contact Support</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="border-t border-[#f0f0f5] dark:border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-50">
+            <p>© 2026 Bali InnoTech by ITB STIKOM Bali. All rights reserved.</p>
+            <div data-location="Denpasar, Bali">Denpasar, Bali, Indonesia</div>
+        </div>
+    </footer>
+    <!-- Cookie Consent Banner -->
+    <div class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[calc(100%-3rem)] max-w-4xl z-50 hidden"
+        id="cookie-consent">
+        <div
+            class="glass-card p-4 md:p-6 rounded-2xl shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 border-primary/20 bg-white/90">
+            <div class="flex items-start gap-4 text-left">
+                <div class="hidden sm:flex bg-primary/10 p-2 rounded-lg text-primary">
+                    <span class="material-symbols-outlined">cookie</span>
+                </div>
+                <div>
+                    <h5 class="font-bold text-sm">Kami menggunakan cookie untuk meningkatkan pengalaman Anda</h5>
+                    <p class="text-xs opacity-70">Dengan melanjutkan penelusuran, Anda menyetujui penggunaan cookie untuk
+                        analitik dan konten yang dipersonalisasi.</p>
+                </div>
+            </div>
+            <div class="flex gap-3 w-full md:w-auto">
+                <button
+                    class="px-6 py-2 rounded-lg text-sm font-bold bg-primary text-white hover:opacity-90 transition-all flex-1 md:flex-none"
+                    id="cookie-accept">Terima Semua</button>
+            </div>
+        </div>
+    </div>
+    <div class="fixed inset-0 z-[60] hidden" id="mobile-menu">
+        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm" data-mobile-close></div>
+        <div
+            class="absolute right-0 top-0 h-full w-[280px] bg-white dark:bg-background-dark shadow-2xl border-l border-[#f0f0f5] dark:border-white/10 p-6 flex flex-col gap-6">
+            <div class="flex items-center justify-between">
+                <h3 class="text-sm font-bold uppercase tracking-widest text-[#101118]/60 dark:text-white/60">Menu</h3>
+                <button class="w-10 h-10 inline-flex items-center justify-center rounded-lg border border-[#dadce7] dark:border-white/20"
+                    data-mobile-close type="button">
+                    <span class="material-symbols-outlined text-xl">close</span>
+                </button>
+            </div>
+            <nav class="flex flex-col gap-4">
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#event"
+                    data-mobile-link>Event</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#expo"
+                    data-mobile-link>Expo</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#workshop"
+                    data-mobile-link>Workshop</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#faq"
+                    data-mobile-link>FAQ</a>
+            </nav>
+        </div>
+    </div>
+    <script src="js/shared.js"></script>
+</body>
+
+</html>

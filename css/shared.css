@@ -1,0 +1,82 @@
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass-card {
+  background: rgba(15, 17, 35, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sticky-nav {
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.dark .sticky-nav {
+  background: rgba(15, 17, 35, 0.85);
+}
+
+.form-input:focus {
+  border-color: #00129e !important;
+  --tw-ring-color: #00129e;
+  ring-color: #00129e !important;
+}
+
+.hero-stage {
+  background-image: linear-gradient(135deg, rgba(0, 5, 88, 0.9) 0%, rgba(16, 47, 181, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAcs5WGYmRz_O9x19vOP3GpYkm7jYjcZirl0CtPcrHZRGpXWIl0H7WVBwmgMgFWWT3upcyg1jAJFJMQnRgqGvqSe49-b7-e735HCAXHUZpSOT3yw8Pwx6n0qFt1I233Z56-tXodbLoR8d4Mlc9--i9oCLM6zVfXFiI1FRIOOy0XnfL-KqdlzOffduDZzF0M2QIRUCropV1YPgv6u8VSr7_b2eUfvo01_HJkfEy7zRTXOhAMSw9jdo-qJPL95nbO_0XcxUG5HUQ3F04");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-registration {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCEOczQmGmtd9bRRgT5p6Je2XGjGdpQVKq-mn5aUKeelrfXDv4UmJ_9riUUGtP70gThhIGsoqB2Fiw-GA-CnjwCJERvBjIzGEv-xdOPp-MyUKrSw5hAhKiaBwkUkDJIaHrYYi9Y8KT0x1EkTUQJlI_zT_Ghsr7tArQokroI7sJUrTvNwWtZRFO2LE7CuhYeseX3od7f7EJgbC8WFl8-oONDOF0LJripjZE-Rz0AX2IdkIscVIdHYha4A1VmNpvgyIePQi0BYsEZtMc");
+}
+
+.roadto-hero-media {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBe4CzgO1-exIZjzAu7PhJ0sNSB4HoGyt81_acst3whwtqGB0bWumODPEM8RraPDyI25dcigXWWyo_sswQYmqbzc6o83TvTvdUR6IPvz8LjV08ygtBX22t70CGdGF6JPTJ55lKmrnj3AtjeTbomWT2XfRTzy208kwvTbEbMheQN7VEnNci0E77rVghNOrudv5DVO7ilkuaq8w_FJUWHMNsbJ2BC2uK3NXpoVNGFqVAzSC5RQqavehgdsT32oNWD5GLLTPMsyZRB41A");
+}
+
+.speaker-avatar {
+  background-size: cover;
+  background-position: center;
+}
+
+.speaker-wayan {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuALflulUt4QgAJFa1T8LxRu2_0oBdopNqEUWoEYmjc9YJjLAeeZRDtczwCxpXRTRSFRU6Qi32g9QaXJ3KB0xSCJZ28QK7Tj0s7PubEMYC2o38l6LpWNT8SXekIU6GBBivvlFr36kSXNE0wBHr2vXpyw3BOE5XRm1eMS8iPMmctEIwe1z12PckoeTgBr-MFdXIkkE1m7PwAE96i9sfbwnyD2UxoKAYPjhaX5LW_ATVbx2i6M7V21i0ewMogiAOliJYmIL07-dAFTkrU");
+}
+
+.speaker-putu {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqWanpXEwCs4dlFUVofDCLS0VRmAbltAspQ0XGDa0sNQ3QWScJJ9THLRwPqONdvozFYARcBtZJnRiCFP9BbyKnXrVzYozUiD-2gJGjULNezA8581DkTQSpaxePoQXhVodHZaBFTynXPyNCEUyNCoXXhMul9rPNiM483AY4aVw-q--k4R0CBUophBMIxTqBQmuZin6xf6_5ujrWTfzsn2BpTgPkTokaLeRAPCVK54gTlmy3HV0BErXbssFgxRe2-TC6sLG_vo0ImYQ");
+}
+
+.speaker-made {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkualQrRqfh6P6Dp_AZEGiTinGkY1sqG5294xwoRHlUZ8HtTe41YXT4vAa8jfHda0sNsdXJ4lz5zM2mvnOQHKM3zg_HxCht6a0606I4bAdb1H2DYS3a53ocV74RmMEcCX3V_JUG78bB5I4rfRtkjglN6s5Y2K--KV9sEZ6TfPqMmK744ZVZoxTUtJ0XUifXKAx6qY9UNUEWr4uONH3SL8GzENj5_5PmXAirPF-wYZ-QXyrqcib-4243NDhgcHs-ytqxEh-qxpd_uo");
+}
+
+.speaker-ketut {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBaaYTOpr_Z29S5dNpgCyEfI-dNhJnmtnTGlnbF-DBRgRGlt_7yGPYxDJo8TExn8SSRyihSPKTvEzb8shtO5C88d5Z9tsyOcsebGgxPj3n_Ry-qd6k9iY-dTPEscfm6OjXeymM7enQnZvOhoShIZXC2C1DsKxd2UlItnlQkDdC2AwQRvc2NBeJFG73pJoQAPdlZOU-MV5Mv3iQqQWsU_hkO2wamcz8vCAku9Id-K745353EcqMwh-jt4DvNALBxxA9kdLz_cc1-DAs");
+}
+
+.capacity-available {
+  color: #00139e;
+}
+
+.capacity-low {
+  color: #ee2121;
+}
+
+.radio-option input:disabled {
+  cursor: not-allowed;
+}
+
+.radio-option:has(input:disabled) {
+  cursor: not-allowed;
+}
+
+.radio-option:has(input:disabled) span {
+  color: #d1d5db;
+}

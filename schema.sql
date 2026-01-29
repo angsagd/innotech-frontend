@@ -5,6 +5,7 @@ CREATE TABLE workshop (
   afiliasi VARCHAR(255),
   tempat VARCHAR(255),
   kapasitas INT NOT NULL,
+  icon VARCHAR(255),
   updated_at TIMESTAMP NULL DEFAULT NULL
 );
 

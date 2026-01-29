@@ -12,25 +12,68 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  const badges = document.querySelectorAll("[data-enrolled][data-capacity]");
-  badges.forEach((badge) => {
-    const enrolled = Number(badge.dataset.enrolled);
-    const capacity = Number(badge.dataset.capacity);
-    if (Number.isNaN(enrolled) || Number.isNaN(capacity) || capacity <= 0) {
-      return;
-    }
+  const updateCapacityBadges = (root = document) => {
+    const badges = root.querySelectorAll("[data-enrolled][data-capacity]");
+    badges.forEach((badge) => {
+      const enrolled = Number(badge.dataset.enrolled);
+      const capacity = Number(badge.dataset.capacity);
+      if (Number.isNaN(enrolled) || Number.isNaN(capacity) || capacity <= 0) {
+        return;
+      }
 
-    const remaining = capacity - enrolled;
-    badge.textContent = `(${enrolled}/${capacity})`;
-    badge.classList.toggle("capacity-low", remaining < 6);
-    badge.classList.toggle("capacity-available", remaining >= 6);
-  });
+      const remaining = capacity - enrolled;
+      badge.textContent = `(${enrolled}/${capacity})`;
+      badge.classList.toggle("capacity-low", remaining < 6);
+      badge.classList.toggle("capacity-available", remaining >= 6);
+    });
+  };
 
-  const dataScript = document.getElementById("session-capacity-data");
+  updateCapacityBadges();
+
+  const dataScript = document.getElementById("session-workshop-data");
   if (dataScript) {
     try {
       const workshops = JSON.parse(dataScript.textContent.trim());
       if (Array.isArray(workshops) && workshops.length > 0) {
+        const workshopCards = document.querySelectorAll("[data-workshop-id]");
+        workshopCards.forEach((card) => {
+          const workshop = workshops.find(
+            (item) => String(item.id) === String(card.dataset.workshopId)
+          );
+          if (!workshop) return;
+          const capacity = Number(workshop.kapasitas);
+          const sessions = Array.isArray(workshop.sesi) ? workshop.sesi : [];
+
+          const setText = (selector, value) => {
+            const el = card.querySelector(selector);
+            if (el && value != null) {
+              el.textContent = value;
+            }
+          };
+
+          setText(".nama-workshop", workshop.nama);
+          setText(".instruktur-workshop", workshop.instruktur);
+          setText(".afiliasi-workshop", workshop.afiliasi);
+          setText(".tempat-workshop", workshop.tempat);
+
+          card.querySelectorAll("[data-session-id]").forEach((span) => {
+            const session = sessions.find(
+              (item) => String(item.id) === String(span.dataset.sessionId)
+            );
+            if (!session) return;
+            if (span.hasAttribute("data-session-time")) {
+              span.textContent = `Sesi ${session.id} (${session.waktu})`;
+            }
+            if (span.hasAttribute("data-session-count")) {
+              span.dataset.enrolled = String(session.peserta);
+              span.dataset.capacity = String(capacity);
+              span.textContent = `(${session.peserta}/${capacity})`;
+            }
+          });
+
+          updateCapacityBadges(card);
+        });
+
         const workshopInputs = document.querySelectorAll('input[name="workshop"]');
         workshopInputs.forEach((input) => {
           const workshop = workshops.find(

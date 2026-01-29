@@ -1,400 +1,371 @@
 <!DOCTYPE html>
-
 <html class="light" lang="id">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Workshop Registration Form | ITB STIKOM Bali</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link href="css/shared.css" rel="stylesheet" />
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#00129e",
-                        "deep-tech": "#000558",
-                        "accent-blue": "#102FB5",
-                        "accent-soft": "#A2B5E8",
-                        "background-light": "#f5f6f8",
-                        "background-dark": "#0f1123",
-                    },
-                    fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"],
-                        "sans": ["Plus Jakarta Sans", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Workshop Registration Form | ITB STIKOM Bali</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+        </script>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <link href="css/shared.css" rel="stylesheet" />
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            "primary": "#00129e",
+                            "deep-tech": "#000558",
+                            "accent-blue": "#102FB5",
+                            "accent-soft": "#A2B5E8",
+                            "background-light": "#f5f6f8",
+                            "background-dark": "#0f1123",
+                        },
+                        fontFamily: {
+                            "display": ["Plus Jakarta Sans", "sans-serif"],
+                            "sans": ["Plus Jakarta Sans", "sans-serif"]
+                        },
+                        borderRadius: {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
                     },
                 },
-            },
-        }
-    </script>
-</head>
-
-<body
-    class="bg-background-light dark:bg-background-dark font-display text-[#101118] dark:text-white min-h-screen transition-colors duration-300">
-
-    <!-- Generated dynamically by server-side script -->
-    <script id="session-capacity-data" type="application/json">
-        [
-            {
-                "id": 1,
-                "nama": "UI/UX Design for Mobile",
-                "kapasitas": 35,
-                "sesi": [
-                    {
-                        "id": 1,
-                        "peserta": 20
-                    },
-                    {
-                        "id": 2,
-                        "peserta": 8
-                    }
-                ]
-            },
-            {
-                "id": 2,
-                "nama": "Web Development Basics",
-                "kapasitas": 35,
-                "sesi": [
-                    {
-                        "id": 1,
-                        "peserta": 35
-                    },
-                    {
-                        "id": 2,
-                        "peserta": 35
-                    }
-                ]
-            },
-            {
-                "id": 3,
-                "nama": "AI & Machine Learning Intro",
-                "kapasitas": 35,
-                "sesi": [
-                    {
-                        "id": 1,
-                        "peserta": 31
-                    },
-                    {
-                        "id": 2,
-                        "peserta": 3
-                    }
-                ]
-            },
-            {
-                "id": 4,
-                "nama": "Cyber Security Awareness",
-                "kapasitas": 30,
-                "sesi": [
-                    {
-                        "id": 1,
-                        "peserta": 18
-                    },
-                    {
-                        "id": 2,
-                        "peserta": 30
-                    }
-                ]
             }
-        ]
-    </script>
-    <!-- Top Navigation Bar -->
-    <header
-        class="sticky-nav fixed top-0 w-full z-50 border-b border-[#f0f0f5] dark:border-white/10 px-6 lg:px-40 py-4">
-        <div class="max-w-[1280px] mx-auto flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="p-1.5 bg-primary rounded-lg text-white">
-                    <span class="material-symbols-outlined text-2xl">rocket_launch</span>
-                </div>
-                <h2 class="text-[#101118] dark:text-white text-lg font-extrabold tracking-tight">Bali InnoTech <span
-                        class="text-primary">2026</span></h2>
-            </div>
-            <nav class="hidden md:flex items-center gap-10">
-                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#event">Event</a>
-                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#expo">Expo</a>
-                <a class="text-sm font-semibold hover:text-primary transition-colors"
-                    href="index.html#workshop">Workshop</a>
-                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#faq">FAQ</a>
-            </nav>
-            <div class="flex items-center gap-3">
-                <img alt="ITB STIKOM Bali" class="h-8 w-auto" src="images/LogoITBSTIKOMBali.png" />
-                <button aria-controls="mobile-menu" aria-expanded="false"
-                    class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-[#dadce7] dark:border-white/20 hover:bg-background-light dark:hover:bg-white/10 transition-all"
-                    id="mobile-menu-toggle" type="button">
-                    <span class="material-symbols-outlined text-xl">menu</span>
-                </button>
-            </div>
-        </div>
-    </header>
-    <main class="pt-24 flex flex-col items-center">
-        <!-- Hero Section -->
-        <section class="w-full @container">
-            <div class="px-6 lg:px-40 py-8 md:py-12 flex justify-center">
-                <div class="max-w-[1280px] w-full">
-                    <div class="hero-registration flex min-h-[360px] md:min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 text-center"
-                        data-alt="Modern office with blue glowing accents">
-                        <div class="flex flex-col gap-4">
-                            <h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-tighter">
-                                Workshop Registration
-                            </h1>
-                            <h2 class="text-white/90 text-base md:text-xl font-normal max-w-2xl mx-auto">
-                                Road to InnoTech: Empowering the next generation of innovators with hands-on technology
-                                training.
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Form Section -->
-        <section class="w-full max-w-[800px] px-6 pb-20 mt-8 relative z-10">
-            <div class="glass-card rounded-xl shadow-xl p-6 md:p-10">
-                <h3 class="text-2xl font-bold text-center mb-8">Formulir Pendaftaran Workshop</h3>
-                <form class="space-y-6" id="registration-form" method="post">
-                    <!-- Text Fields Grid -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Nama Lengkap -->
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Nama Lengkap *</label>
-                            <input
-                                class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 focus:ring-primary focus:border-primary"
-                                placeholder="Masukkan nama lengkap" type="text" name="nama" required />
-                            <p class="text-[11px] italic text-gray-500 dark:text-gray-400 pl-3">Nama lengkap akan dicantumkan pada sertifikat</p>
-                        </div>
-                        <!-- Asal Sekolah -->
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Asal Sekolah</label>
-                            <input
-                                class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 focus:ring-primary focus:border-primary"
-                                placeholder="Contoh: SMK Negeri 1 Denpasar" type="text" name="sekolah" required />
-                            <p class="text-[11px] italic text-gray-500 dark:text-gray-400 pl-3">Asal sekolah akan dicantumkan pada sertifikat</p>
-                        </div>
-                        <!-- WhatsApp -->
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Nomor WhatsApp *</label>
-                            <input
-                                class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 focus:ring-primary focus:border-primary"
-                                placeholder="08xx xxxx xxxx" type="tel" name="whatsapp" required />
-                            <p class="text-[11px] italic text-gray-500 dark:text-gray-400 pl-3">Digunakan untuk menerima informasi workshop</p>
-                        </div>
-                        <!-- Email -->
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Email Aktif *</label>
-                            <input
-                                class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 focus:ring-primary focus:border-primary"
-                                placeholder="nama@email.com" type="email" name="email" required />
-                            <p class="text-[11px] italic text-gray-500 dark:text-gray-400 pl-3">Digunakan untuk menerima pengiriman sertifikat</p>
-                        </div>
-                    </div>
-                    <!-- Radio Workshop -->
-                    <div class="pt-4">
-                        <label class="text-sm font-semibold text-gray-700 dark:text-gray-300 block mb-3">Pilih Workshop *</label>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <label
-                                class="radio-option flex items-center gap-3 p-3 border border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer hover:bg-accent-soft/10 transition-colors">
-                                <input class="text-primary focus:ring-primary h-4 w-4" name="workshop" type="radio" value="1" required />
-                                <span class="text-sm" data-workshop-label>Workshop 1</span>
-                            </label>
-                            <label
-                                class="radio-option flex items-center gap-3 p-3 border border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer hover:bg-accent-soft/10 transition-colors">
-                                <input class="text-primary focus:ring-primary h-4 w-4" name="workshop" type="radio" value="2" required />
-                                <span class="text-sm" data-workshop-label>Workshop 2</span>
-                            </label>
-                            <label
-                                class="radio-option flex items-center gap-3 p-3 border border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer hover:bg-accent-soft/10 transition-colors">
-                                <input class="text-primary focus:ring-primary h-4 w-4" name="workshop" type="radio" value="3" required />
-                                <span class="text-sm" data-workshop-label>Workshop 3</span>
-                            </label>
-                            <label
-                                class="radio-option flex items-center gap-3 p-3 border border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer hover:bg-accent-soft/10 transition-colors">
-                                <input class="text-primary focus:ring-primary h-4 w-4" name="workshop" type="radio" value="4" required />
-                                <span class="text-sm" data-workshop-label>Workshop 4</span>
-                            </label>
-                        </div>
-                    </div>
-                    <!-- Radio Sesi -->
-                    <div class="pt-4">
-                        <label class="text-sm font-semibold text-gray-700 dark:text-gray-300 block mb-3">Pilih Sesi *</label>
-                        <div class="flex flex-col gap-3 w-full">
-                            <label
-                                class="radio-option flex items-center gap-3 p-3 border border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer w-full">
-                                <input class="text-primary focus:ring-primary h-4 w-4" name="session" value="1" type="radio" required disabled />
-                                <span class="text-sm">Sesi 1: Jumat 13 Februari 2026 09:00 - 12:00 WITA</span>
-                                <span class="text-xs text-gray-500 dark:text-gray-400 ml-auto" data-session-id="1">(0/0)</span>
-                            </label>
-                            <label
-                                class="radio-option flex items-center gap-3 p-3 border border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer w-full">
-                                <input class="text-primary focus:ring-primary h-4 w-4" name="session" value="2" type="radio" required disabled />
-                                <span class="text-sm">Sesi 2: Sabtu 14 Februari 2026 13:00 - 16:00 WITA</span>
-                                <span class="text-xs text-gray-500 dark:text-gray-400 ml-auto" data-session-id="2">(0/0)</span>
-                            </label>
-                        </div>
-                    </div>
-                    <!-- Motivation -->
-                    <div class="flex flex-col gap-2 pt-4">
-                        <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Motivasi Bergabung</label>
-                        <textarea
-                            class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 focus:ring-primary focus:border-primary resize-none"
-                            placeholder="Ceritakan singkat alasan Anda ingin mengikuti workshop ini..."
-                            name="motivasi" rows="4"></textarea>
-                    </div>
-                    <!-- Social Media -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Username
-                                Instagram</label>
-                            <div class="relative">
-                                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">@</span>
-                                <input
-                                    class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 pl-7 focus:ring-primary focus:border-primary"
-                                    placeholder="username" type="text" name="instagram" />
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Username
-                                TikTok</label>
-                            <div class="relative">
-                                <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">@</span>
-                                <input
-                                    class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 pl-7 focus:ring-primary focus:border-primary"
-                                    placeholder="username" type="text" name="tiktok" />
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Privacy Notice -->
-                    <div
-                        class="bg-gray-50 dark:bg-gray-800/50 p-4 rounded-lg border border-gray-100 dark:border-gray-800 mt-8">
-                        <div class="flex gap-3">
-                            <input class="mt-1 rounded border-gray-300 text-primary focus:ring-primary" id="privacy"
-                                type="checkbox" required />
-                            <label class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed" for="privacy">
-                                Saya menyetujui bahwa data yang saya kirimkan akan digunakan untuk keperluan
-                                administrasi workshop InnoTech dan akan dijaga kerahasiaannya sesuai dengan kebijakan
-                                privasi yang berlaku.
-                            </label>
-                        </div>
-                    </div>
-                    <!-- Submit Button -->
-                    <div class="pt-6">
-                        <button
-                            class="w-full bg-primary text-white font-bold py-4 rounded-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
-                            type="submit">
-                            Kirim Pendaftaran
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-    <!-- Success Modal Overlay (Hidden by default, shown as example) -->
-    <!-- Remove 'hidden' class to see the modal -->
-    <div
-        class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-background-dark/60 backdrop-blur-sm"
-        id="registration-modal">
-        <div
-            class="glass-card rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl animate-in zoom-in-95 duration-200">
-            <div
-                class="w-20 h-20 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span class="material-symbols-outlined text-green-600 dark:text-green-400 text-5xl"
-                    id="registration-modal-icon">check_circle</span>
-            </div>
-            <h4 class="text-2xl font-bold mb-2" id="registration-modal-title">Pendaftaran Berhasil!</h4>
-            <p class="text-gray-600 dark:text-gray-400 mb-8" id="registration-modal-message">Terima kasih telah mendaftar. Kami akan mengirimkan detail
-                konfirmasi melalui WhatsApp dan Email dalam 1x24 jam.</p>
-            <a href="index.html" id="registration-modal-close"
-                class="block w-full bg-primary text-white font-bold py-3 rounded-lg hover:bg-primary/90 transition-colors cursor-pointer">
-                Tutup
-            </a>
-        </div>
-    </div>
-    <div class="fixed inset-0 z-[60] hidden" id="mobile-menu">
-        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm" data-mobile-close></div>
-        <div
-            class="absolute right-0 top-0 h-full w-[280px] bg-white dark:bg-background-dark shadow-2xl border-l border-[#f0f0f5] dark:border-white/10 p-6 flex flex-col gap-6">
-            <div class="flex items-center justify-between">
-                <h3 class="text-sm font-bold uppercase tracking-widest text-[#101118]/60 dark:text-white/60">Menu</h3>
-                <button class="w-10 h-10 inline-flex items-center justify-center rounded-lg border border-[#dadce7] dark:border-white/20"
-                    data-mobile-close type="button">
-                    <span class="material-symbols-outlined text-xl">close</span>
-                </button>
-            </div>
-            <nav class="flex flex-col gap-4">
-                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#event"
-                    data-mobile-link>Event</a>
-                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#expo"
-                    data-mobile-link>Expo</a>
-                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#workshop"
-                    data-mobile-link>Workshop</a>
-                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#faq"
-                    data-mobile-link>FAQ</a>
-            </nav>
-        </div>
-    </div>
-    <script src="js/shared.js"></script>
-    <!-- Footer -->
-    <footer class="bg-white dark:bg-background-dark border-t border-[#f0f0f5] dark:border-white/10 px-6 lg:px-40 py-20">
-        <div class="max-w-[1280px] mx-auto grid md:grid-cols-4 gap-12 mb-16">
-            <div class="col-span-2">
-                <div class="flex items-center gap-3 mb-6">
+        </script>
+    </head>
+    <body class="bg-background-light dark:bg-background-dark font-display text-[#101118] dark:text-white min-h-screen transition-colors duration-300">
+        <!-- Generated dynamically by server-side script -->
+        <script id="session-workshop-data" type="application/json">
+            [
+                {
+                    "id": 1,
+                    "nama": "Web Development",
+                    "instruktur": "Wayan Webster",
+                    "afiliasi": "Make It Fun Academy",
+                    "tempat": "Lab Web Technology",
+                    "kapasitas": 35,
+                    "sesi": [
+                        {
+                            "id": 1,
+                            "waktu": "Jumat 13 Februari 2026 14:00 - 16:00 WITA",
+                            "peserta": 20
+                        },
+                        {
+                            "id": 2,
+                            "waktu": "Sabtu 14 Februari 2026 09:00 - 11:00 WITA",
+                            "peserta": 8
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "nama": "Mobile App Dev",
+                    "instruktur": "Nyoman Appwalker",
+                    "afiliasi": "App Innovators Inc.",
+                    "tempat": "Lab Programming",
+                    "kapasitas": 35,
+                    "sesi": [
+                        {
+                            "id": 1,
+                            "waktu": "Jumat 13 Februari 2026 14:00 - 16:00 WITA",
+                            "peserta": 35
+                        },
+                        {
+                            "id": 2,
+                            "waktu": "Sabtu 14 Februari 2026 09:00 - 11:00 WITA",
+                            "peserta": 35
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "nama": "Roblox Game Dev",
+                    "instruktur": "Made Blocksmith",
+                    "afiliasi": "Creative Minds Studio",
+                    "tempat": "Lab Multimedia",
+                    "kapasitas": 35,
+                    "sesi": [
+                        {
+                            "id": 1,
+                            "waktu": "Jumat 13 Februari 2026 14:00 - 16:00 WITA",
+                            "peserta": 31
+                        },
+                        {
+                            "id": 2,
+                            "waktu": "Sabtu 14 Februari 2026 09:00 - 11:00 WITA",
+                            "peserta": 3
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "nama": "Cyber Security",
+                    "instruktur": "Ketut Securebyte",
+                    "afiliasi": "Linux Study Group",
+                    "tempat": "Lab Hardware",
+                    "kapasitas": 30,
+                    "sesi": [
+                        {
+                            "id": 1,
+                            "waktu": "Jumat 13 Februari 2026 14:00 - 16:00 WITA",
+                            "peserta": 18
+                        },
+                        {
+                            "id": 2,
+                            "waktu": "Sabtu 14 Februari 2026 09:00 - 11:00 WITA",
+                            "peserta": 30
+                        }
+                    ]
+                }
+            ]
+        </script>
+        <!-- Top Navigation Bar -->
+        <header class="sticky-nav fixed top-0 w-full z-50 border-b border-[#f0f0f5] dark:border-white/10 px-6 lg:px-40 py-4">
+            <div class="max-w-[1280px] mx-auto flex items-center justify-between">
+                <div class="flex items-center gap-3">
                     <div class="p-1.5 bg-primary rounded-lg text-white">
                         <span class="material-symbols-outlined text-2xl">rocket_launch</span>
                     </div>
-                    <h2 class="text-[#101118] dark:text-white text-xl font-extrabold tracking-tight">Bali InnoTech 2026
+                    <h2 class="text-[#101118] dark:text-white text-lg font-extrabold tracking-tight">
+                        Bali InnoTech
+                        <span class="text-primary">2026</span>
                     </h2>
                 </div>
-                <p class="text-lg opacity-60 max-w-md mb-8">
-                    Organized by ITB STIKOM Bali. Pushing the boundaries of education and innovation in the heart of
-                    Indonesia.
-                </p>
-                <div class="flex gap-4">
-                    <a class="w-10 h-10 rounded-full border border-[#dadce7] dark:border-white/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
-                        href="#"><span class="material-symbols-outlined text-base">language</span></a>
-                    <a class="w-10 h-10 rounded-full border border-[#dadce7] dark:border-white/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
-                        href="#"><span class="material-symbols-outlined text-base">alternate_email</span></a>
-                    <a class="w-10 h-10 rounded-full border border-[#dadce7] dark:border-white/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all"
-                        href="#"><span class="material-symbols-outlined text-base">phone</span></a>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#event">Event</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#expo">Expo</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#workshop">Workshop</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#faq">FAQ</a>
+                </nav>
+                <div class="flex items-center gap-3">
+                    <img alt="ITB STIKOM Bali" class="h-8 w-auto" src="images/LogoITBSTIKOMBali.png" />
+                    <button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-[#dadce7] dark:border-white/20 hover:bg-background-light dark:hover:bg-white/10 transition-all" id="mobile-menu-toggle" type="button">
+                        <span class="material-symbols-outlined text-xl">menu</span>
+                    </button>
                 </div>
             </div>
-            <div>
-                <h4 class="font-bold mb-6">Quick Links</h4>
-                <ul class="space-y-4 opacity-60">
-                    <li><a class="hover:text-primary transition-colors" href="#">Event Schedule</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Speaker List</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Exhibitor Info</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Venue Map</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold mb-6">Support</h4>
-                <ul class="space-y-4 opacity-60">
-                    <li><a class="hover:text-primary transition-colors" href="#">Ticketing FAQ</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Contact Support</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-                    <li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
-                </ul>
+        </header>
+        <main class="pt-24 flex flex-col items-center">
+            <!-- Hero Section -->
+            <section class="w-full @container">
+                <div class="px-6 lg:px-40 py-8 md:py-12 flex justify-center">
+                    <div class="max-w-[1280px] w-full">
+                        <div class="hero-registration flex min-h-[360px] md:min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 text-center" data-alt="Modern office with blue glowing accents">
+                            <div class="flex flex-col gap-4">
+                                <h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-tighter">Workshop Registration</h1>
+                                <h2 class="text-white/90 text-base md:text-xl font-normal max-w-2xl mx-auto">Road to InnoTech: Empowering the next generation of innovators with hands-on technology training.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Form Section -->
+            <section class="w-full max-w-[800px] px-6 pb-20 mt-8 relative z-10">
+                <div class="glass-card rounded-xl shadow-xl p-6 md:p-10">
+                    <h3 class="text-2xl font-bold text-center mb-8">Formulir Pendaftaran Workshop</h3>
+                    <form class="space-y-6" id="registration-form" method="post">
+                        <!-- Text Fields Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Nama Lengkap -->
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Nama Lengkap *</label>
+                                <input class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 focus:ring-primary focus:border-primary" placeholder="Masukkan nama lengkap" type="text" name="nama" required />
+                                <p class="text-[11px] italic text-gray-500 dark:text-gray-400 pl-3">Nama lengkap akan dicantumkan pada sertifikat</p>
+                            </div>
+                            <!-- Asal Sekolah -->
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Asal Sekolah</label>
+                                <input class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 focus:ring-primary focus:border-primary" placeholder="Contoh: SMK Negeri 1 Denpasar" type="text" name="sekolah" required />
+                                <p class="text-[11px] italic text-gray-500 dark:text-gray-400 pl-3">Asal sekolah akan dicantumkan pada sertifikat</p>
+                            </div>
+                            <!-- WhatsApp -->
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Nomor WhatsApp *</label>
+                                <input class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 focus:ring-primary focus:border-primary" placeholder="08xx xxxx xxxx" type="tel" name="whatsapp" required />
+                                <p class="text-[11px] italic text-gray-500 dark:text-gray-400 pl-3">Digunakan untuk menerima informasi workshop</p>
+                            </div>
+                            <!-- Email -->
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Email Aktif *</label>
+                                <input class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 focus:ring-primary focus:border-primary" placeholder="nama@email.com" type="email" name="email" required />
+                                <p class="text-[11px] italic text-gray-500 dark:text-gray-400 pl-3">Digunakan untuk menerima pengiriman sertifikat</p>
+                            </div>
+                        </div>
+                        <!-- Radio Workshop -->
+                        <div class="pt-4">
+                            <label class="text-sm font-semibold text-gray-700 dark:text-gray-300 block mb-3">Pilih Workshop *</label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <label class="radio-option flex items-center gap-3 p-3 border border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer hover:bg-accent-soft/10 transition-colors">
+                                    <input class="text-primary focus:ring-primary h-4 w-4" name="workshop" type="radio" value="1" required />
+                                    <span class="text-sm" data-workshop-label>Workshop 1</span>
+                                </label>
+                                <label class="radio-option flex items-center gap-3 p-3 border border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer hover:bg-accent-soft/10 transition-colors">
+                                    <input class="text-primary focus:ring-primary h-4 w-4" name="workshop" type="radio" value="2" required />
+                                    <span class="text-sm" data-workshop-label>Workshop 2</span>
+                                </label>
+                                <label class="radio-option flex items-center gap-3 p-3 border border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer hover:bg-accent-soft/10 transition-colors">
+                                    <input class="text-primary focus:ring-primary h-4 w-4" name="workshop" type="radio" value="3" required />
+                                    <span class="text-sm" data-workshop-label>Workshop 3</span>
+                                </label>
+                                <label class="radio-option flex items-center gap-3 p-3 border border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer hover:bg-accent-soft/10 transition-colors">
+                                    <input class="text-primary focus:ring-primary h-4 w-4" name="workshop" type="radio" value="4" required />
+                                    <span class="text-sm" data-workshop-label>Workshop 4</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Radio Sesi -->
+                        <div class="pt-4">
+                            <label class="text-sm font-semibold text-gray-700 dark:text-gray-300 block mb-3">Pilih Sesi *</label>
+                            <div class="flex flex-col gap-3 w-full">
+                                <label class="radio-option flex items-center gap-3 p-3 border border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer w-full">
+                                    <input class="text-primary focus:ring-primary h-4 w-4" name="session" value="1" type="radio" required disabled />
+                                    <span class="text-sm">Sesi 1: Jumat 13 Februari 2026 09:00 - 12:00 WITA</span>
+                                    <span class="text-xs text-gray-500 dark:text-gray-400 ml-auto" data-session-id="1">(0/0)</span>
+                                </label>
+                                <label class="radio-option flex items-center gap-3 p-3 border border-gray-200 dark:border-gray-700 rounded-lg cursor-pointer w-full">
+                                    <input class="text-primary focus:ring-primary h-4 w-4" name="session" value="2" type="radio" required disabled />
+                                    <span class="text-sm">Sesi 2: Sabtu 14 Februari 2026 13:00 - 16:00 WITA</span>
+                                    <span class="text-xs text-gray-500 dark:text-gray-400 ml-auto" data-session-id="2">(0/0)</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Motivation -->
+                        <div class="flex flex-col gap-2 pt-4">
+                            <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Motivasi Bergabung</label>
+                            <textarea class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 focus:ring-primary focus:border-primary resize-none" placeholder="Ceritakan singkat alasan Anda ingin mengikuti workshop ini..." name="motivasi" rows="4">
+                            </textarea>
+                        </div>
+                        <!-- Social Media -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Username Instagram</label>
+                                <div class="relative">
+                                    <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">@</span>
+                                    <input class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 pl-7 focus:ring-primary focus:border-primary" placeholder="username" type="text" name="instagram" />
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-semibold text-gray-700 dark:text-gray-300">Username TikTok</label>
+                                <div class="relative">
+                                    <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">@</span>
+                                    <input class="form-input w-full rounded-lg border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-sm p-3 pl-7 focus:ring-primary focus:border-primary" placeholder="username" type="text" name="tiktok" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Privacy Notice -->
+                        <div class="bg-gray-50 dark:bg-gray-800/50 p-4 rounded-lg border border-gray-100 dark:border-gray-800 mt-8">
+                            <div class="flex gap-3">
+                                <input class="mt-1 rounded border-gray-300 text-primary focus:ring-primary" id="privacy" type="checkbox" required />
+                                <label class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed" for="privacy">Saya menyetujui bahwa data yang saya kirimkan akan digunakan untuk keperluan administrasi workshop InnoTech dan akan dijaga kerahasiaannya sesuai dengan kebijakan privasi yang berlaku.</label>
+                            </div>
+                        </div>
+                        <!-- Submit Button -->
+                        <div class="pt-6">
+                            <button class="w-full bg-primary text-white font-bold py-4 rounded-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20" type="submit">Kirim Pendaftaran</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!-- Success Modal Overlay (Hidden by default, shown as example) -->
+        <!-- Remove 'hidden' class to see the modal -->
+        <div class="hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-background-dark/60 backdrop-blur-sm" id="registration-modal">
+            <div class="glass-card rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl animate-in zoom-in-95 duration-200">
+                <div class="w-20 h-20 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="material-symbols-outlined text-green-600 dark:text-green-400 text-5xl" id="registration-modal-icon">check_circle</span>
+                </div>
+                <h4 class="text-2xl font-bold mb-2" id="registration-modal-title">Pendaftaran Berhasil!</h4>
+                <p class="text-gray-600 dark:text-gray-400 mb-8" id="registration-modal-message">Terima kasih telah mendaftar. Kami akan mengirimkan detail konfirmasi melalui WhatsApp dan Email dalam 1x24 jam.</p>
+                <a href="index.html" id="registration-modal-close" class="block w-full bg-primary text-white font-bold py-3 rounded-lg hover:bg-primary/90 transition-colors cursor-pointer">Tutup</a>
             </div>
         </div>
-        <div
-            class="border-t border-[#f0f0f5] dark:border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-50">
-            <p>© 2026 Bali InnoTech by ITB STIKOM Bali. All rights reserved.</p>
-            <div data-location="Denpasar, Bali">Denpasar, Bali, Indonesia</div>
+        <div class="fixed inset-0 z-[60] hidden" id="mobile-menu">
+            <div class="absolute inset-0 bg-black/40 backdrop-blur-sm" data-mobile-close>
+            </div>
+            <div class="absolute right-0 top-0 h-full w-[280px] bg-white dark:bg-background-dark shadow-2xl border-l border-[#f0f0f5] dark:border-white/10 p-6 flex flex-col gap-6">
+                <div class="flex items-center justify-between">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-[#101118]/60 dark:text-white/60">Menu</h3>
+                    <button class="w-10 h-10 inline-flex items-center justify-center rounded-lg border border-[#dadce7] dark:border-white/20" data-mobile-close type="button">
+                        <span class="material-symbols-outlined text-xl">close</span>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-4">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#event" data-mobile-link>Event</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#expo" data-mobile-link>Expo</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#workshop" data-mobile-link>Workshop</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#faq" data-mobile-link>FAQ</a>
+                </nav>
+            </div>
         </div>
-    </footer>
-</body>
-
+        <script src="js/shared.js">
+        </script>
+        <!-- Footer -->
+        <footer class="bg-white dark:bg-background-dark border-t border-[#f0f0f5] dark:border-white/10 px-6 lg:px-40 py-20">
+            <div class="max-w-[1280px] mx-auto grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-1.5 bg-primary rounded-lg text-white">
+                            <span class="material-symbols-outlined text-2xl">rocket_launch</span>
+                        </div>
+                        <h2 class="text-[#101118] dark:text-white text-xl font-extrabold tracking-tight">Bali InnoTech 2026</h2>
+                    </div>
+                    <p class="text-lg opacity-60 max-w-md mb-8">Organized by ITB STIKOM Bali. Pushing the boundaries of education and innovation in the heart of Indonesia.</p>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full border border-[#dadce7] dark:border-white/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+                            <span class="material-symbols-outlined text-base">language</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full border border-[#dadce7] dark:border-white/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+                            <span class="material-symbols-outlined text-base">alternate_email</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full border border-[#dadce7] dark:border-white/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+                            <span class="material-symbols-outlined text-base">phone</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 opacity-60">
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Event Schedule</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Speaker List</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Exhibitor Info</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Venue Map</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Support</h4>
+                    <ul class="space-y-4 opacity-60">
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Ticketing FAQ</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Contact Support</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-[#f0f0f5] dark:border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-50">
+                <p>© 2026 Bali InnoTech by ITB STIKOM Bali. All rights reserved.</p>
+                <div data-location="Denpasar, Bali">Denpasar, Bali, Indonesia</div>
+            </div>
+        </footer>
+    </body>
 </html>

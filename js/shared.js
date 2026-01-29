@@ -189,8 +189,10 @@ document.addEventListener("DOMContentLoaded", () => {
       setSuccess();
 
       try {
-        // Simulate form submission to a dummy endpoint. change to simpan-pendaftaran.php when go live
-        const response = await fetch("simpan-pendaftaran-dummy.json", {
+        // Form submission to endpoint. 
+        // Use `simpan-pendaftaran-sample-dummy.json` for local testing.
+        // Change to `simpan-pendaftaran.php` when go live.
+        const response = await fetch("simpan-pendaftaran.php", {
           method: "POST",
           body: new FormData(registrationForm),
         });

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Workshop Registration Form | ITB STIKOM Bali</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
+        </script>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <link href="css/shared.css" rel="stylesheet" />
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            "primary": "#00129e",
+                            "deep-tech": "#000558",
+                            "accent-blue": "#102FB5",
+                            "accent-soft": "#A2B5E8",
+                            "background-light": "#f5f6f8",
+                            "background-dark": "#0f1123",
+                        },
+                        fontFamily: {
+                            "display": ["Plus Jakarta Sans", "sans-serif"],
+                            "sans": ["Plus Jakarta Sans", "sans-serif"]
+                        },
+                        borderRadius: {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
+                    },
+                },
+            }
+        </script>
+    </head>
+    <body class="bg-background-light dark:bg-background-dark font-display text-[#101118] dark:text-white min-h-screen transition-colors duration-300">
+        <!-- Top Navigation Bar -->
+        <header class="sticky-nav fixed top-0 w-full z-50 border-b border-[#f0f0f5] dark:border-white/10 px-6 lg:px-40 py-4">
+            <div class="max-w-[1280px] mx-auto flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="p-1.5 bg-primary rounded-lg text-white">
+                        <span class="material-symbols-outlined text-2xl">rocket_launch</span>
+                    </div>
+                    <h2 class="text-[#101118] dark:text-white text-lg font-extrabold tracking-tight">
+                        Bali InnoTech
+                        <span class="text-primary">2026</span>
+                    </h2>
+                </div>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#event">Event</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#expo">Expo</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#workshop">Workshop</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#faq">FAQ</a>
+                </nav>
+                <div class="flex items-center gap-3">
+                    <img alt="ITB STIKOM Bali" class="h-8 w-auto" src="images/LogoITBSTIKOMBali.png" />
+                    <button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-[#dadce7] dark:border-white/20 hover:bg-background-light dark:hover:bg-white/10 transition-all" id="mobile-menu-toggle" type="button">
+                        <span class="material-symbols-outlined text-xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="pt-24 px-6 lg:px-40 w-full mb-4">
+            <section class="max-w-[1400px] mx-auto">
+                <div class="flex flex-col gap-2 mb-8">
+                    <p class="text-sm uppercase tracking-[0.3em] text-primary/80 font-semibold">Material Icons</p>
+                    <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">Daftar Material Symbols</h1>
+                    <p class="text-sm md:text-base text-[#101118]/70 dark:text-white/70 max-w-2xl">Klik untuk menyalin nama pemanggilan ikon.</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-5">
+                    <label class="relative w-full md:max-w-sm">
+                        <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-base text-[#101118]/50 dark:text-white/50">search</span>
+                        <input id="icon-search" type="search" placeholder="Cari nama icon..." class="w-full rounded-xl border border-[#e6e8f0] dark:border-white/10 bg-white/80 dark:bg-white/5 pl-10 pr-4 py-2.5 text-sm text-[#101118] dark:text-white placeholder:text-[#101118]/40 dark:placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-primary/40 transition" />
+                    </label>
+                    <div class="flex items-center justify-between gap-4">
+                        <div class="text-xs md:text-sm text-[#101118]/60 dark:text-white/60">
+                            Menampilkan <span id="icon-count" class="font-semibold">0</span> dari <span id="icon-total" class="font-semibold">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="icon-grid" class="flex flex-wrap gap-3">
+                </div>
+                <div id="copy-status" class="inline-flex items-center gap-2 rounded-lg bg-[#101118] px-3 py-1.5 text-[11px] font-semibold text-white opacity-0 transition" style="position: absolute; left: 0; top: 0; transform: translateX(-50%) translateY(8px); z-index: 80;">Disalin</div>
+            </section>
+        </main>
+        <div class="fixed inset-0 z-[60] hidden" id="mobile-menu">
+            <div class="absolute inset-0 bg-black/40 backdrop-blur-sm" data-mobile-close>
+            </div>
+            <div class="absolute right-0 top-0 h-full w-[280px] bg-white dark:bg-background-dark shadow-2xl border-l border-[#f0f0f5] dark:border-white/10 p-6 flex flex-col gap-6">
+                <div class="flex items-center justify-between">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-[#101118]/60 dark:text-white/60">Menu</h3>
+                    <button class="w-10 h-10 inline-flex items-center justify-center rounded-lg border border-[#dadce7] dark:border-white/20" data-mobile-close type="button">
+                        <span class="material-symbols-outlined text-xl">close</span>
+                    </button>
+                </div>
+                <nav class="flex flex-col gap-4">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#event" data-mobile-link>Event</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#expo" data-mobile-link>Expo</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#workshop" data-mobile-link>Workshop</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html#faq" data-mobile-link>FAQ</a>
+                </nav>
+            </div>
+        </div>
+        <script src="js/shared.js">
+        </script>
+        <script>
+            const iconGrid = document.getElementById("icon-grid");
+            const iconCount = document.getElementById("icon-count");
+            const iconTotal = document.getElementById("icon-total");
+            const copyStatus = document.getElementById("copy-status");
+            const iconSearch = document.getElementById("icon-search");
+            let allIcons = [];
+
+            const showCopyStatus = (label, anchorRect) => {
+                if (!copyStatus) return;
+                if (copyStatus.parentElement !== document.body) {
+                    document.body.appendChild(copyStatus);
+                }
+                copyStatus.textContent = label;
+                if (anchorRect) {
+                    const top = anchorRect.bottom + window.scrollY + 8;
+                    const left = anchorRect.left + window.scrollX + anchorRect.width / 2;
+                    copyStatus.style.top = `${top}px`;
+                    copyStatus.style.left = `${left}px`;
+                }
+                copyStatus.style.opacity = "1";
+                copyStatus.style.transform = "translateX(-50%) translateY(0)";
+                clearTimeout(showCopyStatus._t);
+                showCopyStatus._t = setTimeout(() => {
+                    copyStatus.style.opacity = "0";
+                    copyStatus.style.transform = "translateX(-50%) translateY(8px)";
+                }, 500);
+            };
+
+            const copyText = async (text) => {
+                try {
+                    await navigator.clipboard.writeText(text);
+                    return true;
+                } catch (err) {
+                    const temp = document.createElement("textarea");
+                    temp.value = text;
+                    temp.setAttribute("readonly", "");
+                    temp.style.position = "absolute";
+                    temp.style.left = "-9999px";
+                    document.body.appendChild(temp);
+                    temp.select();
+                    const ok = document.execCommand("copy");
+                    document.body.removeChild(temp);
+                    return ok;
+                }
+            };
+
+            const createIconCard = (name) => {
+                const card = document.createElement("button");
+                card.type = "button";
+                card.dataset.icon = name;
+                card.className = "group relative rounded-xl border border-[#e6e8f0] dark:border-white/10 bg-white/80 dark:bg-white/5 px-3 py-4 text-center shadow-sm hover:shadow-md transition flex-[0_0_calc(33.333%-0.75rem)] sm:flex-[0_0_calc(25%-0.75rem)] md:flex-[0_0_calc(16.666%-0.75rem)] lg:flex-[0_0_calc(12.5%-0.75rem)] xl:flex-[0_0_calc(10%-0.75rem)] 2xl:flex-[0_0_calc(8.333%-0.75rem)]";
+                card.innerHTML = `
+                    <span class="material-symbols-outlined text-3xl text-primary group-hover:text-[#0b2ad8]">${name}</span>
+                    <span class="pointer-events-none absolute -top-2 left-1/2 -translate-x-1/2 -translate-y-full whitespace-nowrap rounded-lg bg-[#101118] px-2 py-1 text-[11px] font-semibold text-white opacity-0 shadow-lg transition group-hover:opacity-100">
+                        ${name}
+                    </span>
+                `;
+                return card;
+            };
+
+            const renderIcons = (icons) => {
+                iconGrid.innerHTML = "";
+                icons.forEach((name) => iconGrid.appendChild(createIconCard(name)));
+                if (iconCount) iconCount.textContent = icons.length.toString();
+                if (iconTotal) iconTotal.textContent = allIcons.length.toString();
+            };
+
+            const initIcons = async () => {
+                try {
+                    const res = await fetch("material-icons.json", { cache: "no-cache" });
+                    if (!res.ok) throw new Error("Gagal memuat material-icons.json");
+                    const icons = await res.json();
+                    allIcons = Array.isArray(icons) ? icons : [];
+                    renderIcons(allIcons);
+                } catch (err) {
+                    iconGrid.innerHTML = '<div class="text-sm text-red-500">Gagal memuat daftar ikon.</div>';
+                }
+            };
+
+            iconGrid.addEventListener("click", async (event) => {
+                const card = event.target.closest("[data-icon]");
+                if (!card) return;
+                const name = card.dataset.icon;
+                const ok = await copyText(name);
+                const rect = card.getBoundingClientRect();
+                showCopyStatus(ok ? `Disalin: ${name}` : "Gagal menyalin", rect);
+            });
+
+            iconSearch.addEventListener("input", (event) => {
+                const query = event.target.value.trim().toLowerCase();
+                if (!query) {
+                    renderIcons(allIcons);
+                    return;
+                }
+                const filtered = allIcons.filter((name) => name.toLowerCase().includes(query));
+                renderIcons(filtered);
+            });
+
+            initIcons();
+        </script>
+        <!-- Footer -->
+        <footer class="bg-white dark:bg-background-dark border-t border-[#f0f0f5] dark:border-white/10 px-6 lg:px-40 py-20">
+            <div class="max-w-[1280px] mx-auto grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-1.5 bg-primary rounded-lg text-white">
+                            <span class="material-symbols-outlined text-2xl">rocket_launch</span>
+                        </div>
+                        <h2 class="text-[#101118] dark:text-white text-xl font-extrabold tracking-tight">Bali InnoTech 2026</h2>
+                    </div>
+                    <p class="text-lg opacity-60 max-w-md mb-8">Organized by ITB STIKOM Bali. Pushing the boundaries of education and innovation in the heart of Indonesia.</p>
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full border border-[#dadce7] dark:border-white/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+                            <span class="material-symbols-outlined text-base">language</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full border border-[#dadce7] dark:border-white/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+                            <span class="material-symbols-outlined text-base">alternate_email</span>
+                        </a>
+                        <a class="w-10 h-10 rounded-full border border-[#dadce7] dark:border-white/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+                            <span class="material-symbols-outlined text-base">phone</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 opacity-60">
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Event Schedule</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Speaker List</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Exhibitor Info</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Venue Map</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Support</h4>
+                    <ul class="space-y-4 opacity-60">
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Ticketing FAQ</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Contact Support</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-[#f0f0f5] dark:border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-50">
+                <p>© 2026 Bali InnoTech by ITB STIKOM Bali. All rights reserved.</p>
+                <div data-location="Denpasar, Bali">Denpasar, Bali, Indonesia</div>
+            </div>
+        </footer>
+    </body>
+</html>

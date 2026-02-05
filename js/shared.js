@@ -50,11 +50,26 @@ document.addEventListener("DOMContentLoaded", () => {
               el.textContent = value;
             }
           };
+          const setAttr = (selector, attr, value) => {
+            const el = card.querySelector(selector);
+            if (el && value != null) {
+              el.setAttribute(attr, value);
+            }
+          };
 
           setText(".nama-workshop", workshop.nama);
           setText(".instruktur-workshop", workshop.instruktur);
           setText(".afiliasi-workshop", workshop.afiliasi);
           setText(".tempat-workshop", workshop.tempat);
+          setText(".workshop-icon", workshop.icon);
+          setAttr(".workshop-avatar", "src", workshop.avatar);
+          if (workshop.instruktur) {
+            setAttr(
+              ".workshop-avatar",
+              "alt",
+              `Portrait of ${workshop.instruktur}`
+            );
+          }
 
           card.querySelectorAll("[data-session-id]").forEach((span) => {
             const session = sessions.find(
@@ -73,7 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
           updateCapacityBadges(card);
         });
-
         const workshopInputs = document.querySelectorAll('input[name="workshop"]');
         workshopInputs.forEach((input) => {
           const workshop = workshops.find(
@@ -131,6 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Ignore invalid JSON to avoid breaking the page.
     }
   }
+
 
   const registrationForm = document.getElementById("registration-form");
   if (registrationForm) {
